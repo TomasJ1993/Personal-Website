@@ -17,10 +17,7 @@ export default function HomePage() {
         return(
           <div>
            <Element name="homeComponent"><Hero title="Tomas Jankauskas" introPage={true} description={[123,12312,12312312,124124]}  changingText={true}>
-               <Link onClick={()=>{console.log('HIRE ME BUTTON');
-               }} className="main-link" style={{margin: "2rem"}}>
-                   Hire Me
-               </Link>
+              
            </Hero></Element> 
            {/* <Services/> */}
            <Element name="infoComponent"><Info/></Element>

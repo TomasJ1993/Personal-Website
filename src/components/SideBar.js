@@ -10,6 +10,7 @@ export default function SideBar() {
         {value=>{
             const {links,sidebarOpen, handleSidebar} = value;
             return <SideWrapper show={sidebarOpen}>
+                <div className="list-container" style={{width: "100%"}}>
                 <ul>
                     {links.map(link=>{
                         return (
@@ -18,6 +19,7 @@ export default function SideBar() {
                         )   
                     })}
                 </ul>
+                </div>
 
 
             </SideWrapper>
@@ -28,18 +30,16 @@ export default function SideBar() {
 
 const SideWrapper = styled.nav`
 position: fixed;
-top: 50px;
+width:100%;
 display:flex;
 justify-content:center;
 text-align:center;
 align-items:center;
-width: 100%;
-height: 30%;
 background: var(--mainGrey);
 z-index: 3;
 border-right: 4px solid var(--primaryColor);
 transition: var(--mainTransition);
-transform: ${props=> props.show?'translateX(0)':'translateY(-100%)'};
+transform: ${props=> props.show?'translateY(0)':'translateY(-100%)'};
 
 ul{
     list-style-type: none;
@@ -48,6 +48,7 @@ ul{
 
 .sidebar-link{
     display:block;
+    width:100%;
     font-size:1.2rem;
     text-transform: capitalize;
     color: var(--mainBlack);
@@ -66,9 +67,6 @@ cursor: pointer;
     padding: 0.5rem 1.5rem 0.5rem 2.5rem;
 }
 
-@media (min-width:576px){
-    width:20rem;
-}
 
 
 `

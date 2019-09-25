@@ -8,7 +8,7 @@ export default class Footer extends Component {
         {value => {
           return (
             <FooterWrapper>
-              <div data-aos='fade-down'className="container py-3">
+              <div className="container py-3">
                 <div className="row">
                   <div className="col-md-6">
                     <p className="text-capitalize">

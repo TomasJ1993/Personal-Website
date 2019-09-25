@@ -2,6 +2,11 @@ import React from 'react'
 import Title from './Title'
 import styled from 'styled-components'
 import testImage from '../images/mainBcg.jpeg'
+import overhandFitness from '../images/overhandWebsite2.jpeg'
+import electronicImage from '../images/electronics.jpeg'
+import metroImage from '../images/metro.jpeg'
+import coderbunkerImage from '../images/coderbunker.jpeg'
+import trafficImage from '../images/traffic.jpeg'
 
 export default function Projects({bodyColor}) {
     return <ProjectsWrapper bodyColor={bodyColor}>
@@ -12,17 +17,22 @@ export default function Projects({bodyColor}) {
                                     <div className="projects-container">
                                         <div className="row">
                                             <div className="col-8 col-md-8 col-sm-8">
+                                        <a href="http://overhandfitness.cn/en/home">
+
                                                 <div className="project-item">
+
                                                     <div className="overlay">
                                                         <div className="text text-title">Overhand Fitness
-                                                        <div className="text-description">asdfasdfsadfasdf</div>
+                                                        <div className="text-description">contributor to Tech-Powered Fitness project</div>
                                                         </div>
                                                     </div>
                                                     <img className="img-thumbnail"
                                                      style={{background: 'var(--darkGrey)'}}
-                                                     src={testImage}
+                                                     src={overhandFitness}
                                                      />
                                                 </div>
+                                                </a>
+
                                             </div>
                                             <div className="col-4 col-md-4 col-sm-4">
                                             <div className="row">
@@ -30,12 +40,14 @@ export default function Projects({bodyColor}) {
                                                 <div className="project-item">
                                                     <div className="overlay">
                                                         <div className="text text-title">
-                                                            Hello
+                                                            LTTMS <div className="text-description">
+                                                            traffic monitoring system
+                                                            </div>
                                                         </div>
                                                     </div>
                                                     <img className="img-thumbnail"
                                                      style={{background: 'var(--darkGrey)'}}
-                                                     src={testImage}
+                                                     src={trafficImage}
                                                      />
                                                 </div>
                                                 </div>
@@ -43,12 +55,14 @@ export default function Projects({bodyColor}) {
                                                 <div className="project-item">
                                                     <div className="overlay">
                                                         <div className="text text-title">
-                                                            Hello
+                                                            Houtan Project <div className="text-description">
+                                                                metro train location detection
+                                                            </div>
                                                         </div>
                                                     </div>
                                                     <img className="img-thumbnail"
                                                      style={{background: 'var(--darkGrey)'}}
-                                                     src={testImage}
+                                                     src={metroImage}
                                                      />
                                                 </div>
                                                 </div>
@@ -59,23 +73,28 @@ export default function Projects({bodyColor}) {
                                             <div className="col-6 col-md-6 col-sm-6">
                                                 <div className="project-item">
                                                     <div className="overlay">
-                                                        <div className="text text-title">Hello
+                                                        <div className="text text-title" style={{textTransform:"none"}}>Coderbunker.com
+                                                        <div className="text-description">Contributor to Community Website</div>
                                                         </div>
                                                     </div>
                                                     <img className="img-thumbnail"
                                                      style={{background: 'var(--darkGrey)'}}
-                                                     src={testImage}/>
+                                                     src={coderbunkerImage}/>
                                                 </div>
                                             </div>
                                             <div className="col-6 col-md-6 col-sm-6">
+                                            <a href="https://monkey-time.netlify.com/">
                                                 <div className="project-item">
                                                     <div className="overlay">
-                                                        <div className="text text-title">Hello</div>
+                                                        <div className="text text-title">Product Store
+                                                        <div className="text-description">Shop Online</div>
+                                                        </div>
                                                     </div>
                                                     <img className="img-thumbnail"
                                                      style={{background: 'var(--darkGrey)'}}
-                                                     src={testImage}/>
+                                                     src={electronicImage}/>
                                                 </div>
+                                                </a>
                                             </div>
                                      </div>
                                 </div>

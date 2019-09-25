@@ -1,9 +1,8 @@
 import React from 'react';
-import {FaBars, FaCartPlus} from 'react-icons/fa'
+import {FaBars} from 'react-icons/fa'
 import styled from 'styled-components'
 import {ProductConsumer} from '../context/'
-import {Link} from 'react-router-dom'
-import { Link as ScrollerLink, DirectLink, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
+import {Link as ScrollerLink, DirectLink, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
 
 
 
@@ -12,23 +11,16 @@ export default function Navbar() {
         {value=>{
             const{handleSidebar, links} = value
             return <NavWrapper>
-                <div className='nav-center'>
+                <div className='nav-center d-flex justify-content-end'>
                     <FaBars className='nav-icon' onClick={handleSidebar}/>
-                    {/* <ul className="nav-links">
+                    <div class="navbar ">
                     {links.map(link=>{
                         return (
                           <ScrollerLink activeClass="active" to={link.scrollname} spy={true} offset={-80} smooth={true} duration={250}> <li className="nav-link nav-link-ltr"> {link.text}</li></ScrollerLink>
                         )   
                     })}
-                  
-                    </ul> */}
-
-  {/* <div class="navbar">
-  <a class="nav-link nav-link-ltr" href="#">Home</a>
-  <a class="nav-link nav-link-ltr" href="#">About</a>
-  <a class="nav-link nav-link-ltr" href="#">Contact</a>
-  <a class="nav-link nav-link-ltr" href="#">Blog</a>
-</div> */}
+                    
+</div> 
                 </div>
             </NavWrapper>
         }}
@@ -117,5 +109,15 @@ border-bottom: 3px solid var(--primaryColor);
     right: -8px;
     padding: 0 5px;
     border-radius: 50%;
+}
+
+@media (min-width: 576px) {
+  .nav-icon{
+display:none;  }
+}
+@media(max-width:576px){
+  .navbar{
+    display:none;
+  }
 }
 `
