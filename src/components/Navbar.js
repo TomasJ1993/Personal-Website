@@ -2,6 +2,7 @@ import React from 'react';
 import {FaBars} from 'react-icons/fa'
 import styled from 'styled-components'
 import {ProductConsumer} from '../context/'
+import tjIcon from '../images/TJ.png'
 import {Link as ScrollerLink, DirectLink, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
 
 

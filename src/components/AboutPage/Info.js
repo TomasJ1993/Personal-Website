@@ -1,6 +1,6 @@
 import React from 'react'
 import Title from '../Title'
-import aboutBcg from '../../images/aboutBcg.jpeg'
+import aboutBcg from '../../images/aboutMe.jpeg'
 import styled from 'styled-components'
 
 
@@ -18,7 +18,22 @@ export default function Info({bodyColor}) {
                 <div className="col-10 mx-auto col-md-6 my-3">
                     <Title title="about me" titleDescription="know everything you need to know">
                     </Title>
-                    <p className="text-lead text-muted my-3">Laborum id ea ex commodo. Veniam ea officia do ex occaecat veniam in occaecat. Dolor ipsum fugiat excepteur sunt quis minim irure. Elit velit deserunt excepteur incididunt reprehenderit in deserunt commodo eiusmod. Consequat dolor magna dolor laborum. Id in aliquip id enim fugiat adipisicing aute laboris.Laborum id ea ex commodo. Veniam ea officia do ex occaecat veniam in occaecat. Dolor ipsum fugiat excepteur sunt quis minim irure. Elit velit deserunt excepteur incididunt reprehenderit in deserunt commodo eiusmod. Consequat dolor magna dolor laborum. Id in aliquip id enim fugiat adipisicing aute laboris</p>
+                    <p className="text-lead text-muted my-3">
+                    I am front-end developer
+                    currently working for Overhand
+                    Fitness, a start-up company
+                    specializing in building and
+                    running a system that provides
+                    an exciting gamified fitness
+                    experience. As a programmer, I
+                    have a goal to become an expert
+                    in both front-end and backend
+                    development. Therefore, my
+                    ambition is to work for a
+                    company that pursues the same
+                    direction - full-stack web
+                    development. I specialize in ReactJS, Angular, Android/Java.
+                    </p>
                 </div>
             </div>
             </div>

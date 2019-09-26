@@ -52,6 +52,7 @@ export default function Projects({bodyColor}) {
                                                 </div>
                                                 </div>
                                                 <div className="col-12 col-md-12 col-sm-12 py-3">
+                                                <a href="https://github.com/TomasJ1993/houtan-analysis">
                                                 <div className="project-item">
                                                     <div className="overlay">
                                                         <div className="text text-title">
@@ -65,12 +66,14 @@ export default function Projects({bodyColor}) {
                                                      src={metroImage}
                                                      />
                                                 </div>
+                                                </a>
                                                 </div>
                                                 </div>
                                             </div>
                                             </div>
                                             <div className="row">
                                             <div className="col-6 col-md-6 col-sm-6">
+                                            <a href="https://coderbunker.com/">
                                                 <div className="project-item">
                                                     <div className="overlay">
                                                         <div className="text text-title" style={{textTransform:"none"}}>Coderbunker.com
@@ -81,6 +84,7 @@ export default function Projects({bodyColor}) {
                                                      style={{background: 'var(--darkGrey)'}}
                                                      src={coderbunkerImage}/>
                                                 </div>
+                                                </a>
                                             </div>
                                             <div className="col-6 col-md-6 col-sm-6">
                                             <a href="https://monkey-time.netlify.com/">

@@ -1,30 +1,99 @@
 import styled from 'styled-components'
-import mainBcg from '../images/mainBcg.jpeg'
-import mainBcg2 from '../images/defaultBcg.jpeg'
+import backgroundImageOne from '../images/natureImage.jpeg'
+import backgroundImageTwo from '../images/lithuaniaBackground.jpeg'
+import backgroundImageThree from '../images/webDeveloper.jpeg'
 import React from 'react';
 import {FaPlayCircle} from 'react-icons/fa'
 
 
 export default function Hero({img, title, max, children, description, changingText, introPage, button}) {
-    return <HeroWrapper  introPage={introPage} max={max} img={img} changingText={changingText}>        
-            <div className="banner-container row mx-0 mb-5">
-            <div className="col-12 col-md-12 col-sm-12 d-flex justify-content-center align-items-end text" style={{zIndex: "2"}}>
+    return <HeroWrapper  introPage={introPage} max={max} img={img} changingText={changingText}>    
+    <div className="banner-container mb-5 py-0 px-0">
+        <div className="images-list">
+            <img className="top" src={backgroundImageOne}/>
+            <img src={backgroundImageTwo}/>
+            <img src={backgroundImageThree}/>   
+        </div>
+        <div className="text-container row mx-0">
+        <div className="col-12 col-md-12 col-sm-12 d-flex justify-content-center align-items-end text" style={{zIndex: "2"}}>
              <p className="text-title description" ></p>
              </div>
-             <div className="buttonContainer col-12 col-md-12 col-sm-12">
+             <div className="col-12 col-md-12 col-sm-12">
              <a href="https://srv-file7.gofile.io/download/a690m7/Web%20Developer.pdf" download="proposed_file_name" className="hire-button main-link" style={{margin: "2rem"}}>
                     hire me
-                </a>
+            </a>
         </div>
-        <div className="banner"> <FaPlayCircle onClick={()=>
-            console.log('play video')
-        } className="round-button"/>
-</div>
-       </div>
+        </div>
+       
+        </div>    
+        
     </HeroWrapper>
 }
  
+
+   {/* <div className="banner-container row mx-0 mb-5">
+            <img src={backgroundImageOne}/>
+        <img src={mainBcg2}/>
+            
+        <div className="banner"> 
+             <FaPlayCircle onClick={()=>
+            console.log('play video')
+        } className="round-button"/>
+</div>
+       </div> */
+    }
+
 const HeroWrapper = styled.div`
+
+.banner-container{
+    position:relative;
+    width: 100%;
+    height: 90vh;
+    color: var(--mainWhite);
+    text-align:center;
+    background-repeat: no-repeat;
+
+}
+
+.images-list{
+    background:#000000;
+    position:relative;
+    width:100%;
+    height:100%;
+}
+
+
+@keyframes fade {
+  0%   { opacity: 0; }
+  11.11%   { opacity: 1; }
+  33.33%  { opacity: 1; }
+  44.44%  { opacity: 0; }
+  100% { opacity: 0; }
+}
+.images-list img { 
+    opacity:0; 
+    animation-name: fade; 
+    animation-duration: 15s; 
+    animation-iteration-count: infinite; 
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    width:100%;
+    height:100%
+}
+
+.images-list img:nth-child(1) { animation-delay: 0s;}
+.images-list img:nth-child(2) { animation-delay: 5s; }
+.images-list img:nth-child(3) { animation-delay: 10s; }
+
+
+.text-container{
+    position:absolute;
+    top:0;
+    height:100%;
+    width:100%;
+}
 
 .description:before{
     font-size: 2rem;
@@ -33,48 +102,13 @@ const HeroWrapper = styled.div`
     animation: descriptionAnimation 15s linear infinite 0s;
 }
 
-.buttonContainer{
-    z-index:2;
-}
-
-.banner{
-/* background: linear-gradient(var(--primaryRGBA), var(--primaryRGBA)), url(${props=>(props.img)}) center/cover no-repeat; */
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  background: #000000;
-  padding: 10px;
-  z-index: 1;
-  animation: bannerAnimation 5s linear infinite 0s;
-  ;
-}
-
-    @keyframes bannerAnimation {
-    0% { opacity: 0;  }
-    30% { opacity: 0.7; }
-    50% { opacity: 1; }
-    80% { opacity: 1; }
-    100% { opacity: 1; }
-}
-
 @keyframes descriptionAnimation {
     0% { opacity: 0;  content: 'Hello';}
     20% { opacity: 1;  content: 'Hello';}
     47% { opacity: 1;  content: 'I am Tomas Jankauskas';}
-    86% { opacity: 1; transform: translateY(20px);   content: 'A Web Developer from Lithuania';}
-    100% { opacity: 1; transform: translateY(20px);   content: 'A Web Developer from Lithuania';}
-
+    86% { opacity: 1; transform: translateY(20px);   content: 'A frontend web developer';}
+    100% { opacity: 1; transform: translateY(20px);   content: 'A frontend web developer';}
 }
-
-.banner-container{
-position:relative;
-color: var(--mainWhite);
-text-align:center;
-min-height: 90vh;
-width: 100%;
-}
-
 
 .title{
     animation-delay: 5s;
@@ -86,19 +120,9 @@ width: 100%;
 }
 
 
-.banner:nth-child(1){
-    background: linear-gradient(var(--primaryRGBA), var(--primaryRGBA)), url(${mainBcg}) center/cover no-repeat; 
-
-}
-
-.banner:nth-child(2){
-    /* background: linear-gradient(var(--primaryRGBA), var(--primaryRGBA)), url(${props=>(props.img)}) center/cover no-repeat;  */
-    background: linear-gradient(var(--primaryRGBA), var(--primaryRGBA)), url(${mainBcg2}) center/cover no-repeat; 
-    animation-delay: 5s; 
-}
-
 /* video button */
 .round-button {
+    display:none; /*invisible for now */
     width:50px;
     height:50px;
     border-radius:50%;
@@ -112,13 +136,9 @@ width: 100%;
     cursor: pointer;
 	background-color: #5fb7ea;
 	box-shadow: 0px 0px 20px #5fb7ea;
-
-.hire-button{
-    position:fixed;
-}
 }
 
 `
 Hero.defaultProps = {
-    img: mainBcg
+    img: backgroundImageOne
 }
