@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 import backgroundImageOne from '../images/mountain.jpg'
 import backgroundImageTwo from '../images/wood.jpg'
-import backgroundImageThree from '../images/computer.jpg'
+import backgroundImageThree from '../images/webdev.jpg'
 import React from 'react';
 import {FaPlayCircle} from 'react-icons/fa'
 

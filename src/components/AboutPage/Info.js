@@ -1,6 +1,6 @@
 import React from 'react'
 import Title from '../Title'
-import aboutBcg from '../../images/aboutMe.jpeg'
+import aboutBcg from '../../images/office.jpg'
 import styled from 'styled-components'
 
 
