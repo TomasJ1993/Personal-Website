@@ -29,7 +29,7 @@ export default function Navbar() {
 }
 
 const NavWrapper = styled.nav`
-position:sticky;
+position:fixed;
 top:0;
 position:-webkit-sticky;
 width: 100%;

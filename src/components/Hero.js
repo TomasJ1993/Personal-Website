@@ -19,7 +19,7 @@ export default function Hero({img, title, max, children, description, changingTe
              <p className="text-title description" ></p>
              </div>
              <div className="col-12 col-md-12 col-sm-12">
-             <a href="https://srv-file7.gofile.io/download/a690m7/Web%20Developer.pdf" download="proposed_file_name" className="hire-button main-link" style={{margin: "2rem"}}>
+             <a href="https://www.dropbox.com/s/vefulxwthgol6zb/Web%20Developer%20TJ.pdf?dl=0" download="proposed_file_name" target="_blank" className="hire-button main-link" style={{margin: "2rem"}}>
                     hire me
             </a>
         </div>

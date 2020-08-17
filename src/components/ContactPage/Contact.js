@@ -28,7 +28,7 @@ export default function Contact({bodyColor}) {
                    <div className="form-group">
                     <input type="text" 
                     name="subject" 
-                    placeholder="Subjetct..." 
+                    placeholder="Subject..." 
                     className="form-control"/>
                 </div>
 

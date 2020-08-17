@@ -7,6 +7,7 @@ import electronicImage from '../images/electronics.jpeg'
 import metroImage from '../images/metro.jpeg'
 import coderbunkerImage from '../images/coderbunker.jpeg'
 import trafficImage from '../images/traffic.jpeg'
+import udty from "../images/udentity.png"
 
 export default function Projects({bodyColor}) {
     return <ProjectsWrapper bodyColor={bodyColor}>
@@ -37,19 +38,22 @@ export default function Projects({bodyColor}) {
                                             <div className="col-4 col-md-4 col-sm-4">
                                             <div className="row">
                                             <div className="col-12 col-md-12 col-sm-12">
+                                            <a href="https://www.udty.tech">
+
                                                 <div className="project-item">
                                                     <div className="overlay">
                                                         <div className="text text-title">
-                                                            LTTMS <div className="text-description">
-                                                            traffic monitoring system
+                                                            Udentity <div className="text-description">
+                                                            Livestream platform for students
                                                             </div>
                                                         </div>
                                                     </div>
                                                     <img className="img-thumbnail"
                                                      style={{background: 'var(--darkGrey)'}}
-                                                     src={trafficImage}
+                                                     src={udty}
                                                      />
                                                 </div>
+                                                </a>
                                                 </div>
                                                 <div className="col-12 col-md-12 col-sm-12 py-3">
                                                 <a href="https://github.com/TomasJ1993/houtan-analysis">

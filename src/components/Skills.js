@@ -19,7 +19,7 @@ export default function Skills({bodyColor}) {
                   <ul className="col-10 mx-auto col-sm-6 col-md-4 text-center my-3">
 
             <li className="skill"><SkillsBar percentage={65} skill={'NodeJS '}/></li>
-            <li className="skill"><SkillsBar percentage={60} skill={'Golang'}/></li>
+            <li className="skill"><SkillsBar percentage={60} skill={'Wechat apps'}/></li>
             <li className="skill"><SkillsBar percentage={60} skill={'MongoDB, MySQL'}/></li>
                 </ul>
                 </div>
